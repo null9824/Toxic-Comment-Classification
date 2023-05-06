@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '1.css' %}" />
+    {% comment %} <link rel="stylesheet" href="1.css" /> {% endcomment %}
+    <title>Project</title>
+            <link rel="icon" href="https://theedunepal.ap-south-1.linodeobjects.com/uploads/clients/ambitioncollege/logo/ambitionnnn_1626065179.jpg"  type="image/png">
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+           <h3 class="postery">Postery</h3>
+            <ul>
+                <li><a href="">My Dashboard</a></li>
+                <li><a href="">Login</a></li>
+                <li ><a class="post" href="">Get Started</a></li>
+                <li ><a class="post" href="">Add Post</a></li>
+            </ul>
+         </nav>
+
+
+<div class="main">
+         <div class="content">
+            <div class="item">
+                <div class="title">
+                    <h4>
+Nepal Government is planning to make TU Kirtipur Ground as an Int'l level ground by including the construction work in the budget of next fiscal year.                    </h4>
+                    <div class="date">
+                         <span class="opacity">Published at 28 April,2023</span>
+                        <br>
+
+                         <span class="opacity">1 Comment</span>
+                    </div>
+
+                    <div class="comment">
+                        <div class="com-heading">
+                            <h3>Comments</h3>
+                        </div>
+
+                        <div class="main-comment">
+                            <div class="com-name">
+                                <strong>Kp oli</strong>
+                                <span>Commented 2 days ago</span>
+                             </div>
+                            <div class="com-text">
+Great news for sports lovers! I hope that they will implement whatever was said                            </div>
+                           <div><a class="btn" href="">Delete</div></a>
+                    </div>
+                    </div>
+               </div>
+</div>
+
+
+              <div class="heading mb-10">
+                    <h3 class="title">Add your Comment</h3>
+                  </div>
+             <div>
+                    {% if result1 %}
+                    <p> {{result1}}</p>
+<!--                    <p> Accuracy1: </p>-->
+                    {% endif %}
+                 </div>
+
+<div>
+                    {% if result2 %}
+                    <p> {{result2}}</p>
+<!--                    <p> Accuracy2: </p>-->
+                    {% endif %}
+    </div>
+
+                  <form action="" method="POST">
+                  {% csrf_token %%}
+                    <div class="form-group">
+                      <label for="">What you think about this post?</label>
+                      <textarea name="comment_box"  cols="" rows="10" placeholder="Type here..." class="form-control"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                      <button class="btn" type="submit">Comment</button>
+                    </div>
+
+                  </form>
+<div>
+    </div>
+
+
+<!--              <div class="heading mb-10">-->
+<!--                    <h3 class="title">Add your Comment</h3>-->
+<!--                  </div>-->
+
+<!--                    {% if result2 %}-->
+<!--                    <p> {{result2}}</p>-->
+<!--                    <p> Accuracy2: </p>-->
+<!--                    {% endif %}-->
+
+<!--                  <form action="" method="POST">-->
+<!--                  {% csrf_token %%}-->
+<!--                    <div class="form-group">-->
+<!--                      <label for="">What you think about this post?NB</label>-->
+<!--                      <textarea name="comment_box"  cols="" rows="10" placeholder="Type here..." class="form-control"></textarea>-->
+
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <button class="btn" type="submit">Comment</button>-->
+<!--                    </div>-->
+
+<!--                  </form>-->
+
+
+         </div>
+
+</div>
+
+
+<footer class="footer">
+    <p>&copy; Postery, 2023. All Rights Reserved</p>
+    <ul class="term-flex">
+      <li>
+        <a href="#">Terms and Conditions</a>
+      </li>
+      <li>
+        <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+        <a href="#">FAQ's</a>
+      </li>
+    </ul>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+   body {
+    font-size: 16px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+
+
+.flex {
+    display: flex;
+  }
+
+  .jcb {
+    justify-content: space-between;
+  }
+  .px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bg-white {
+    background-color: #fff;
+  }
+  .aic {
+    align-items: center;
+  }
+  .font-24 {
+    font-size: 24px;
+  }
+  .gap-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    row-gap: 16px;
+  }
+  .block {
+    display: block;
+  }
+  .px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .rounded {
+    border-radius: 8px;
+  }
+  .rounded-sm {
+    border-radius: 4px;
+  }
+  .bg-p {
+    background-color: #00968D;
+    color: #ffffff;
+  }
+
+  .dashboard .menu .menuItems a {
+    transition: all 0.5s ease;
+  }
+  .dashboard .menu .menuItems a:hover {
+    background-color: rgba(0, 150, 141, 0.1);
+    padding-left: 15px;
+    border-radius: 6px;
+    color: #00968D;
+  }
+  .dashboard .menu .menuItems a.active {
+    background-color: #00968D;
+    padding-left: 15px;
+    color: #fff;
+    border-radius: 6px;
+  }
+
+  .flex-4 {
+    flex: 4;
+  }
+  .py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .h-min-80 {
+    min-height: 80vh;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .gap-20 {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 20px;
+  }
+  .bg-gray {
+    background-color: #f8f8f8;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .font-18 {
+    font-size: 18px;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  .gap-30 {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
+  }
+  .text-opacity {
+    opacity: 0.8;
+  }
+  .flex-3 {
+    flex: 3;
+  }
+  .mt-30 {
+    margin-top: 30px;
+  }
+  .bg-white {
+    background-color: #fff;
+  }
+  .px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.comment {
+  border-left: 5px solid #00968D;
+}
+
+.mt-15 {
+    margin-top: 15px;
+  }
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .rounded-sm {
+    border-radius: 4px;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .gap-10 {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+  }
+  .pagination .item {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  .pagination .item:hover {
+    background-color: rgba(0, 150, 141, 0.09);
+    color: #00968D;
+  }
+  .pagination .active {
+    background-color: #00968D;
+    color: #fff;
+  }
+  .pagination button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .pagination button:hover {
+    color: #00968D;
+    background-color: rgba(0, 150, 141, 0.09);
+  }
+  .gap-3 {
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    row-gap: 3px;
+  }
+  .jcs {
+    justify-content: flex-start;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .form-group {
+    margin-top: 10px;
+  }
+  .form-group .error {
+    color: red;
+  }
+  .form-group label {
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 90%;
+  }
+  .form-group .form-control {
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #00968D;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .btn:hover {
+    background-color: rgba(0, 150, 141, 0.9);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }

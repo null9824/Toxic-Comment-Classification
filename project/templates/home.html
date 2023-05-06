@@ -1,0 +1,227 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Year Project</title>
+    <!-- add icon link -->
+        <link rel="icon" href="https://theedunepal.ap-south-1.linodeobjects.com/uploads/clients/ambitioncollege/logo/ambitionnnn_1626065179.jpg"  type="image/png">
+    <link
+      rel="stylesheet"
+href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    {% comment %} <link rel="stylesheet" href="style.css" /> {% endcomment %}
+  </head>
+  <body>
+    <header class="flex jcb px-30 py-20 bg-white aic">
+      <a href="index.html">
+        <div class="logo flex font-24 gap-16 aic">
+          <i class="las la-eye"></i>
+          <h3 class="title">Postery</h3>
+        </div>
+      </a>
+      <nav>
+        <ul class="flex gap-16">
+          <li>
+            <a href="dashboard-posts.html" class="block px-15 py-10 rounded"> My Dashboard </a>
+          </li>
+          <li>
+            <a href="login.html" class="block px-15 py-10 rounded"> Login </a>
+          </li>
+          <li>
+            <a href="register.html" class="block px-15 py-10 rounded bg-p"> Get Started </a>
+          </li>
+          <li>
+            <a href="add-post.html" class="block px-15 py-10 rounded bg-p"> <i class="las la-plus"></i> Add Post</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="dashboard flex">
+      <div class="content flex-4 px-30 py-30 h-min-80">
+        <ul class="items">
+          <li class="item mt-10">
+            <div class="item-wrapper flex gap-20 bg-gray px-30 py-30 rounded">
+              <div class="icon">
+                <i class="las px-10 py-10 rounded la-sticky-note bg-p"></i>
+              </div>
+              <div class="title flex-1">
+                <h4 class="text font-18 mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem, perspiciatis.
+                </h4>
+                <div class="meta flex gap-30">
+                  <span class="text-opacity">Published at 16 Jan, 2023</span>
+                  <span class="text-opacity">23 comments</span>
+                </div>
+
+                <div class="commentManagement flex gap-30">
+                  <div class="item-comment flex-3 mt-30 bg-white px-20 rounded py-10">
+                    <div class="heading mb-10">
+                      <h3 class="title">Comments (12)</h3>
+                    </div>
+                    <ul class="comments">
+                      <li class="comment mt-15 py-10 px-10 bg-gray rounded">
+                        <div class="name">
+                          <strong>Anukul Sapkota</strong>
+                          <span>Commented 3 days ago</span>
+                        </div>
+                        <div class="text mt-10">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nulla qui dignissimos id voluptates ipsum
+                          eius itaque nemo, impedit porro.
+                        </div>
+                        <div class="comment-action flex mt-10">
+                          <div
+                            class="actionitem rounded-sm cursor-pointer flex px-10 aic py-5 gap-10 bg-p"
+                          >
+                            <i class="la la-trash"></i>
+                            <div class="label">Delete Comment</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="comment mt-15 py-10 px-10 bg-gray rounded">
+                        <div class="name">
+                          <strong>Rabin Shrestha</strong>
+                          <span>Commented 3 days ago</span>
+                        </div>
+                        <div class="text mt-10">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nulla qui dignissimos id voluptates ipsum
+                          eius itaque nemo, impedit porro.
+                        </div>
+                        <div class="comment-action flex mt-10">
+                          <div
+                            class="actionitem rounded-sm cursor-pointer flex px-10 aic py-5 gap-10 bg-p"
+                          >
+                            <i class="la la-trash"></i>
+                            <div class="label">Delete Comment</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="comment mt-15 py-10 px-10 bg-gray rounded">
+                        <div class="name">
+                          <strong>Sujata Sangroula</strong>
+                          <span>Commented 3 days ago</span>
+                        </div>
+                        <div class="text mt-10">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ad nulla qui dignissimos id voluptates ipsum
+                          eius itaque nemo, impedit porro.
+                        </div>
+                        <div class="comment-action flex mt-10">
+                          <div
+                            class="actionitem rounded-sm cursor-pointer flex px-10 aic py-5 gap-10 bg-p"
+                          >
+                            <i class="la la-trash"></i>
+                            <div class="label">Delete Comment</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="pagination flex gap-3 jcs mt-20 aic">
+                      <button>Previous</button>
+                      <div class="item">1</div>
+                      <div class="item active">2</div>
+                      <div class="item">3</div>
+                      <div class="item">4</div>
+                      <div class="item">5</div>
+                      <button>Next</button>
+                    </div>
+                  </div>
+                  <div
+                    class="item-comment flex-1 mt-30 bg-white px-20 rounded py-10"
+                  >
+
+                  <div class="heading mb-10">
+                    <h3 class="title">Add your Comment</h3>
+                  </div>
+                    {% if result %}
+                    <p> {{result}}</p>
+                    <p> Accuracy1: </p>
+                    {% endif %}
+                    
+
+                    {% if result2 %}
+                    <p> {{result2}}</p>
+                    <p> Accuracy2: </p>
+                    {% endif %}
+
+                  <form action="" method="POST">
+                  {% csrf_token %%}
+                    <div class="form-group">
+                      <label for="">What you think about this post?SVM</label>
+                      <textarea name="comment_box"  cols="" rows="10" placeholder="Type here..." class="form-control"></textarea>
+                       
+
+                        
+
+                    </div>
+                    <div class="form-group">
+                      <button class="btn" type="submit">Comment</button>
+                    </div>
+
+                  </form>
+
+
+<!--                    <div class="heading mb-10">-->
+<!--                    <h3 class="title">Add your Comment</h3>-->
+<!--                  </div>-->
+<!--                    {% if result2 %}-->
+<!--                    <p> {{result2}}</p>-->
+<!--                    <p> Accuracy2: </p>-->
+<!--                    {% endif %}-->
+
+
+
+<!--                    <form action="" method="POST">-->
+<!--                  {% csrf_token %%}-->
+<!--                    <div class="form-group">-->
+<!--                      <label for="">What you think about this post?Naive</label>-->
+<!--                      <textarea name="comment_box2"  cols="" rows="10" placeholder="Type here..." class="form-control"></textarea>-->
+
+
+
+
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                      <button class="btn" type="submit">Comment</button>-->
+<!--                    </div>-->
+
+<!--                  </form>-->
+                </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="px-30 bg-black py-30 mt-30 bg-gray flex jcb">
+      <p>&copy; Postery, 2023. All Rights Reserved</p>
+      <ul class="flex gap-16">
+        <li>
+          <a href="#">Terms and Conditions</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">FAQ's</a>
+        </li>
+      </ul>
+
+    </footer>
+  </body>
+</html>
